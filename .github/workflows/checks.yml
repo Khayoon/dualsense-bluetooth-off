@@ -1,15 +1,19 @@
 name: Checks
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
 permissions:
   contents: read
 jobs:
   windows:
     runs-on: windows-latest
-    strategy:
-      matrix:
-        shell: [powershell, pwsh]
     steps:
       - uses: actions/checkout@v7.0.1
-      - name: Check parsing, target selection, and native layouts
-        shell: ${{ matrix.shell }}
+      - name: Windows PowerShell
+        shell: powershell
+        run: ./tests/Run-Checks.ps1
+      - name: PowerShell 7
+        shell: pwsh
         run: ./tests/Run-Checks.ps1

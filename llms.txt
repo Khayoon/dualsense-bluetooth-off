@@ -2,7 +2,7 @@
 
 > A Windows PowerShell utility and desktop shortcut for disconnecting a paired Sony DualSense (PS5) controller over Bluetooth while retaining pairing.
 
-Version: 1.0.0. License: MIT. Repository owner: Khayoon.
+Version: 1.0.1. License: MIT. Repository owner: Khayoon.
 
 Install.cmd runs one-click setup. Install-ControllerOff.ps1 copies the utility to %LOCALAPPDATA%\DualSenseBluetoothOff and adds the DualSense Off desktop shortcut. The utility runs as the normal Windows user. It automatically selects a single paired DualSense and requires an explicit Bluetooth address when multiple controllers are paired.
 

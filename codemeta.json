@@ -7,7 +7,7 @@
   "url": "https://github.com/Khayoon/dualsense-bluetooth-off",
   "codeRepository": "https://github.com/Khayoon/dualsense-bluetooth-off",
   "issueTracker": "https://github.com/Khayoon/dualsense-bluetooth-off/issues",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": "https://spdx.org/licenses/MIT",
   "programmingLanguage": [
     "PowerShell",
