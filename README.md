@@ -59,11 +59,11 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Controller-Off.ps1 -St
 
 The `ExecutionPolicy Bypass` option applies to that PowerShell process; it does not change the system's saved execution policy.
 
-## Windows and hardware
+## Windows
 
 Intended for **Windows 10 and Windows 11**, with Windows PowerShell and a paired Bluetooth DualSense. Windows 11 has not been checked on physical hardware for this release.
 
-The original setup is an **ASUS X79** system: **ASUS P9X79 PRO** (P9X79 Pro), Intel X79 chipset, LGA2011 / LGA 2011 socket, and an ASUS Bluetooth radio, running Windows 10 Pro x64 build 19045 (Win10). The implementation uses standard Windows Bluetooth APIs and does not repair motherboard or Bluetooth-adapter faults.
+The shortcut uses standard Windows Bluetooth APIs and keeps your controller selection in a local per-user configuration.
 
 ## FAQ
 
@@ -76,8 +76,11 @@ The original setup is an **ASUS X79** system: **ASUS P9X79 PRO** (P9X79 Pro), In
 ## References and support
 
 - [Microsoft: IOCTL_BTH_DISCONNECT_DEVICE](https://learn.microsoft.com/en-us/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_disconnect_device)
-- [ASUS P9X79 PRO official manual (PDF)](https://dlcdnet.asus.com/pub/ASUS/mb/LGA2011/P9X79-PRO/E8037_P9X79_PRO.pdf)
 - [Report an issue](https://github.com/Khayoon/dualsense-bluetooth-off/issues)
 - [Project link index](llms.txt) · [CodeMeta metadata](codemeta.json)
 
 Independently authored utility; not affiliated with Sony, ASUS or Microsoft. Released under the [MIT License](LICENSE).
+
+## Separate connection repair
+
+For pairing and reconnection help on the ASUS P9X79 PRO's onboard Atheros adapter, see [ASUS P9X79 PRO DualSense Bluetooth Fix](https://github.com/Khayoon/asus-p9x79-dualsense-bluetooth-fix).

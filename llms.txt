@@ -8,7 +8,7 @@ Install.cmd runs one-click setup. Install-ControllerOff.ps1 copies the utility t
 
 Controller-Off.ps1 supports -List, -Status, -Address AA:BB:CC:DD:EE:FF, -WhatIf and -Json. The utility uses Windows Bluetooth APIs without adding drivers, services or background watchers, unpairing the controller, or disabling devices. Windows confirms Bluetooth disconnection; controller firmware determines physical power state.
 
-Intended platforms: Windows 10 and Windows 11. Original hardware context: Windows 10 Pro x64 build 19045, ASUS P9X79 PRO motherboard, Intel X79 chipset, LGA2011 socket and ASUS Bluetooth radio. Windows 11 has not been checked on physical hardware for this release. The utility is not a motherboard repair.
+Intended platforms: Windows 10 and Windows 11. The utility disconnects a controller that is already paired; it is independent of the connection-repair project below.
 
 ## Project
 
@@ -25,4 +25,4 @@ Intended platforms: Windows 10 and Windows 11. Original hardware context: Window
 ## References
 
 - [Microsoft Bluetooth disconnect IOCTL](https://learn.microsoft.com/en-us/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_disconnect_device): Windows API reference for requesting a remote Bluetooth device disconnect.
-- [ASUS P9X79 PRO manual](https://dlcdnet.asus.com/pub/ASUS/mb/LGA2011/P9X79-PRO/E8037_P9X79_PRO.pdf): Official motherboard reference for the original hardware context.
+- [ASUS P9X79 PRO DualSense Bluetooth Fix](https://github.com/Khayoon/asus-p9x79-dualsense-bluetooth-fix): Separate pairing/reconnection helper and driver guide for the motherboard's onboard Atheros adapter.

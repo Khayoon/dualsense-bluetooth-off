@@ -30,9 +30,8 @@
     "Windows 10",
     "Windows 11",
     "PowerShell",
-    "ASUS P9X79 PRO",
-    "Intel X79",
-    "LGA2011"
+    "Desktop shortcut",
+    "Controller disconnect"
   ],
   "maintainer": {
     "@type": "Person",
