@@ -1,0 +1,43 @@
+{
+  "@context": "https://w3id.org/codemeta/3.0",
+  "@type": "SoftwareSourceCode",
+  "name": "DualSense Bluetooth Off",
+  "description": "A Windows PowerShell utility and desktop shortcut for disconnecting a paired Sony DualSense (PS5) controller over Bluetooth while retaining pairing. Includes one-click setup, explicit controller selection, status queries, WhatIf previews and JSON output. Windows confirms disconnection; controller firmware determines physical power state.",
+  "identifier": "https://github.com/Khayoon/dualsense-bluetooth-off",
+  "url": "https://github.com/Khayoon/dualsense-bluetooth-off",
+  "codeRepository": "https://github.com/Khayoon/dualsense-bluetooth-off",
+  "issueTracker": "https://github.com/Khayoon/dualsense-bluetooth-off/issues",
+  "version": "1.0.0",
+  "license": "https://spdx.org/licenses/MIT",
+  "programmingLanguage": [
+    "PowerShell",
+    "C#"
+  ],
+  "operatingSystem": [
+    "Windows 10",
+    "Windows 11"
+  ],
+  "runtimePlatform": "Windows PowerShell",
+  "softwareRequirements": [
+    "Windows Bluetooth stack",
+    "Bluetooth adapter",
+    "Paired Sony DualSense controller"
+  ],
+  "keywords": [
+    "DualSense",
+    "PS5 controller",
+    "Bluetooth disconnect",
+    "Windows 10",
+    "Windows 11",
+    "PowerShell",
+    "ASUS P9X79 PRO",
+    "Intel X79",
+    "LGA2011"
+  ],
+  "maintainer": {
+    "@type": "Person",
+    "name": "Khayoon",
+    "url": "https://github.com/Khayoon"
+  },
+  "readme": "https://github.com/Khayoon/dualsense-bluetooth-off/blob/main/README.md"
+}

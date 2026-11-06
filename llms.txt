@@ -1,0 +1,28 @@
+# DualSense Bluetooth Off
+
+> A Windows PowerShell utility and desktop shortcut for disconnecting a paired Sony DualSense (PS5) controller over Bluetooth while retaining pairing.
+
+Version: 1.0.0. License: MIT. Repository owner: Khayoon.
+
+Install.cmd runs one-click setup. Install-ControllerOff.ps1 copies the utility to %LOCALAPPDATA%\DualSenseBluetoothOff and adds the DualSense Off desktop shortcut. The utility runs as the normal Windows user. It automatically selects a single paired DualSense and requires an explicit Bluetooth address when multiple controllers are paired.
+
+Controller-Off.ps1 supports -List, -Status, -Address AA:BB:CC:DD:EE:FF, -WhatIf and -Json. The utility uses Windows Bluetooth APIs without adding drivers, services or background watchers, unpairing the controller, or disabling devices. Windows confirms Bluetooth disconnection; controller firmware determines physical power state.
+
+Intended platforms: Windows 10 and Windows 11. Original hardware context: Windows 10 Pro x64 build 19045, ASUS P9X79 PRO motherboard, Intel X79 chipset, LGA2011 socket and ASUS Bluetooth radio. Windows 11 has not been checked on physical hardware for this release. The utility is not a motherboard repair.
+
+## Project
+
+- [Repository](https://github.com/Khayoon/dualsense-bluetooth-off): Source code, project overview and issue tracker.
+- [README](https://github.com/Khayoon/dualsense-bluetooth-off/blob/main/README.md): Installation, command examples, platform context and FAQ.
+- [Latest release](https://github.com/Khayoon/dualsense-bluetooth-off/releases/latest): Release ZIP and release notes.
+- [Controller utility](https://github.com/Khayoon/dualsense-bluetooth-off/blob/main/Controller-Off.ps1): Command-line implementation.
+- [Installer](https://github.com/Khayoon/dualsense-bluetooth-off/blob/main/Install-ControllerOff.ps1): Desktop shortcut setup.
+- [One-click setup](https://github.com/Khayoon/dualsense-bluetooth-off/blob/main/Install.cmd): Windows setup entry point.
+- [CodeMeta metadata](https://github.com/Khayoon/dualsense-bluetooth-off/blob/main/codemeta.json): Machine-readable project metadata.
+- [License](https://github.com/Khayoon/dualsense-bluetooth-off/blob/main/LICENSE): MIT license.
+- [Issues](https://github.com/Khayoon/dualsense-bluetooth-off/issues): Bug reports and usage questions.
+
+## References
+
+- [Microsoft Bluetooth disconnect IOCTL](https://learn.microsoft.com/en-us/windows-hardware/drivers/ddi/bthioctl/ni-bthioctl-ioctl_bth_disconnect_device): Windows API reference for requesting a remote Bluetooth device disconnect.
+- [ASUS P9X79 PRO manual](https://dlcdnet.asus.com/pub/ASUS/mb/LGA2011/P9X79-PRO/E8037_P9X79_PRO.pdf): Official motherboard reference for the original hardware context.

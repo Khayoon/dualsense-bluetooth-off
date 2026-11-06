@@ -1,0 +1,25 @@
+name: Problem using DualSense Off
+description: Report a setup or controller-disconnection problem.
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include the exact error, if any. Omit Bluetooth addresses and personal file paths.
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows version
+      placeholder: Windows 10 or Windows 11
+  - type: input
+    id: hardware
+    attributes:
+      label: Controller, motherboard, and Bluetooth adapter
+      placeholder: DualSense, ASUS P9X79 PRO, ASUS Bluetooth
+  - type: textarea
+    id: status
+    attributes:
+      label: Status output
+      description: Run Controller-Off.ps1 -Status -Json and paste the result. Keep personal identifiers out of the report.

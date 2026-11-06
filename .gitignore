@@ -1,0 +1,11 @@
+# Per-user device identity, status, generated shortcuts, and local files.
+controller.json
+last-result.json
+*.lnk
+*.log
+*.zip
+*.dll
+*.pdb
+.local/
+.DS_Store
+Thumbs.db

@@ -1,0 +1,15 @@
+name: Checks
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  windows:
+    runs-on: windows-latest
+    strategy:
+      matrix:
+        shell: [powershell, pwsh]
+    steps:
+      - uses: actions/checkout@v7.0.1
+      - name: Check parsing, target selection, and native layouts
+        shell: ${{ matrix.shell }}
+        run: ./tests/Run-Checks.ps1
