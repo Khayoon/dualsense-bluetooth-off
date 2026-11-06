@@ -10,6 +10,12 @@ Disconnect a paired **Sony DualSense (PS5) controller** from Windows with a desk
 - **Command-line controls:** list controllers, check connection status, preview an action with `-WhatIf`, or return JSON.
 - **Uses Windows Bluetooth APIs:** no added drivers, services or background watchers; no unpairing or device disabling.
 
+## Scope: controller-off only
+
+This is a **standalone controller-off utility**, not the Bluetooth pairing/connection fix. It assumes the controller is already paired with Windows.
+
+The pairing fix must remain in a **separate repository**, with its own instructions and releases. Do not bundle pairing-repair scripts, driver changes, or adapter-reset operations into this tool or its installer. Installing this utility does not install or apply the pairing fix.
+
 ## Install
 
 1. Download the ZIP from the [latest release](https://github.com/Khayoon/dualsense-bluetooth-off/releases/latest).
